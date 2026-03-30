@@ -9,7 +9,7 @@ const initialState = {
 const About = () => {
   const [state, formAction] = useActionState(UserPassword, initialState)
   return (
-    <div className='m-3'>
+    <div className='m-3'> 
       <form action={formAction}>
         <input className='border border-blue-500 rounded-lg' type="password" name='password' />
         <button className='bg-amber-400 ml-2 rounded-lg'>submit</button>
