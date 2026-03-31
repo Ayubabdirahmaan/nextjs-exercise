@@ -8,7 +8,7 @@ export async function greeting(prevState: formState, formData: FormData): Promis
     const firstName = formData.get('firstname')?.toString()
     const lastName = formData.get('lastname')?.toString()
 
-    if (!firstName || !lastName) {
+    if (!firstName || !lastName || firstName.trim() || lastName.trim()  ) {
         return { firstName: '', lastName: '', error: 'fistname and lastname is required' }
     }
 
